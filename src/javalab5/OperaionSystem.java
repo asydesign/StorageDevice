@@ -9,15 +9,19 @@ package javalab5;
  * @author fmi
  */
 public class OperaionSystem {
-    private StorageDeviceInterface defaultSD;
+    private MyInterface defaultSD;
     
-    public OperaionSystem(StorageDeviceInterface defaultSD){
+    public OperaionSystem(MyInterface defaultSD){
         this.defaultSD = defaultSD;
     }
-//    public void StorageDeviceInterface setDefaultSD(StorageDeviceInterface defaultSD){
-//        this.defaultSD = defaultSD;
-//    }
-//    public void StorageDeviceInterface getDefaultSD(){
-//        this.defaultSD = defaultSD;
-//    }
+    public void setDefaultSD(MyInterface defaultSD){
+        this.defaultSD = defaultSD;
+    }
+    public MyInterface getDefaultSD(){
+        return defaultSD;
+    }
+     public void showSD(){
+        System.out.println(defaultSD.read());
+        System.out.println(defaultSD.write("hi"));
+    }
 }

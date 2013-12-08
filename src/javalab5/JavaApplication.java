@@ -17,12 +17,11 @@ public class JavaApplication {
 
     public static void main(String[] args){ 
        
-//       storageDeviceInterface storageDevice;
-//       StorageDevice newStorage = new StorageDevice();
-//       OperaionSystem myWin = new OperaionSystem(newStorage);
-//       System.out.println(myWin.read());
-//       System.out.println(myWin.write());
-       
+      StorageDevice storageDevice =  new StorageDevice();
+      
+      OperaionSystem myWin = new OperaionSystem(storageDevice);
+
+       myWin.showSD();
       
     }
 }
