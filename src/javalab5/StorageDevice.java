@@ -9,7 +9,9 @@ package javalab5;
  * @author fmi
  */
 public class StorageDevice implements MyInterface{
-        
+    
+    
+    
     @Override
     public String read() {
       return "Default Device reads";  
