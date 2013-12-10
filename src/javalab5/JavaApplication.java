@@ -19,7 +19,7 @@ public class JavaApplication {
        
       StorageDevice storageDevice =  new StorageDevice();
       
-      OperaionSystem myWin = new StorageDevice("USB");
+      OperaionSystem myWin = new OperaionSystem(storageDevice);
 
        myWin.showSD();
       
